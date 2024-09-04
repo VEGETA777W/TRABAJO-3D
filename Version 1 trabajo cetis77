@@ -1,0 +1,21 @@
+# include <stdio.h>
+//version 1
+int main ()
+
+{
+int a,b,c,d;
+
+printf("dame el valor del primer numero");
+scanf("%d",&a);
+
+printf("\ndame el segundo valor");
+scanf("%d",&b);
+
+c=a+b;
+d=a-b;
+
+printf("\nel resultado de la suma es: %d: ",c);
+printf("\nel resultado de la resta es: %d: ",d);
+
+return 0;
+}
