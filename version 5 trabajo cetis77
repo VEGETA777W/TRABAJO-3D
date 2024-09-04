@@ -1,0 +1,25 @@
+#include<stdio.h>
+//version 5
+int main(){
+	float num[2],op[4];
+	char msg[6][20] = {{"primer"},{"segundo"},{"suma"},{"resta"},{"multiplicacion"},{"division"}};
+	int r;
+	for(r=0;r<2;r++){
+		printf("dame el %s valor a usar: ",msg[r]);
+		scanf("%f",&num[r]);
+	}
+	if(num[0]!=0 && num[1]!=0){
+		op[0] = num[0] + num[1];
+		op[1] = num[0] - num[1];
+		op[2] = num[0] * num[1];
+		op[3] = num[0] / num[1];
+
+		printf("estos son sus resultados: \n");
+		for(r=0;r<4;r++){
+			printf("La %s de [%.2f] y [%.2f] = %.2f \n",msg[r+2],num[0],num[1],op[r]);
+		}
+	}
+	else{
+		printf("Error no se puede concretar las operaciones, verifique que no puso algun valor nulo");
+	}
+}
